@@ -1,5 +1,3 @@
-
-
 def reverse_string(original_string):
 
     new_string = ""
@@ -28,12 +26,12 @@ reverse_string(user_input)
     # but this can also be rewritten as follows for a 5 letter word like 'water' 
         # 'for i in range(0,5):' or 'for i in range(5):'
     
-# The body of the for loop changes the value of the empty reverse_string. With each
+# The body of the for loop changes the value of the empty new_string. With each
     # iteration, it adds a letter from the end of original string to the new string. 
                     # *original_string[len(original_string) - 1]* 
     # establishes the index of the last letter of the original string. Subtracting i 
     # from this causes the value to change with each loop. At the 1st iteration, i is 0 
     # so the letter at the last index is added to the new string. At the 2nd iteration, 
     # i is 1 so instead of subtracting 1 from the length you subtract 2 and the second
-    # to last letter is added to reverse_string. This continues until the loop is complete. 
+    # to last letter is added to new_string. This continues until the loop is complete. 
     # Without the i, the loop would retrieve the last letter of the original string each time.
